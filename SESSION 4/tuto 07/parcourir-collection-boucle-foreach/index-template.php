@@ -6,29 +6,33 @@
         <div class="carte-article">
 
             <a href="article.php?id=<?= $article['id'] ?>" class="carte-image">
-                <img src="images/<?= htmlspecialchars($article['image']) ?>" alt="Illustration">
+                <img
+                    src="images/<?= htmlspecialchars($article['image'], ENT_QUOTES, 'UTF-8') ?>"
+                    alt="Illustration"
+                >
             </a>
 
             <span class="etiquette-categorie">
-                <?= htmlspecialchars($article['categorie_libelle']) ?>
+                <?= htmlspecialchars($article['categorie_libelle'], ENT_QUOTES, 'UTF-8') ?>
             </span>
 
             <div class="carte-contenu">
 
                 <h3>
                     <a href="article.php?id=<?= $article['id'] ?>">
-                        <?= htmlspecialchars($article['titre']) ?>
+                        <?= htmlspecialchars($article['titre'], ENT_QUOTES, 'UTF-8') ?>
                     </a>
                 </h3>
 
                 <p>
-                    <?= htmlspecialchars(mb_substr($article['contenu'], 0, 100)) ?>...
+                    <?= htmlspecialchars(mb_substr($article['contenu'], 0, 100), ENT_QUOTES, 'UTF-8') ?>...
                 </p>
 
                 <div class="carte-meta">
                     <span>
                         <?= date('d M Y', strtotime($article['date_creation'])) ?>
                     </span>
+
                     <span>5 min</span>
                 </div>
 
