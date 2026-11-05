@@ -1,0 +1,96 @@
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+/* Liste des cartes */
+.liste-cartes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Carte */
+.carte {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+/* Titre */
+.carte-contenu h3 a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* Etiquette catégorie */
+.etiquette-categorie {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Bleu */
+.etiquette-categorie.bleu {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+/* Rose */
+.etiquette-categorie.rose {
+    background-color: #fce7f3;
+    color: #db2777;
+}
+
+/* Badge à la une */
+.badge-special {
+    display: inline-block;
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Description */
+.carte-contenu p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Informations */
+.carte-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 13px;
+    margin-top: 15px;
+}
