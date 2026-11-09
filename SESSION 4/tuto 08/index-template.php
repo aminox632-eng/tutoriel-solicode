@@ -48,7 +48,7 @@
                         </span>
 
                         <p>
-                            <?= htmlspecialchars(mb_substr($article['contenu'], 0, 100)) ?>...
+                            <?= htmlspecialchars(substr($article['contenu'], 0, 100)) ?>...
                         </p>
 
                         <div class="carte-meta">
