@@ -1,0 +1,53 @@
+# MLD Complet — Blog
+
+## 1. Table VILLE
+- id_ville (PK)
+- nom_ville
+
+## 2. Table AUTEUR
+- id_auteur (PK)
+- nom_auteur
+- prenom_auteur
+- email_auteur
+- id_ville (FK)
+
+## 3. Table CATEGORIE
+- id_categorie (PK)
+- nom_categorie
+
+## 4. Table TAG
+- id_tag (PK)
+- nom_tag
+
+## 5. Table ARTICLE
+- id_article (PK)
+- titre_article
+- contenu_article
+- date_publication
+- statut_article
+- image_article
+- id_auteur (FK)
+- id_categorie (FK)
+
+## 6. Table ARTICLE_TAG
+- id_article (PK, FK)
+- id_tag (PK, FK)
+
+---
+
+## Relations entre les tables
+
+- VILLE (1,N) AUTEUR
+- AUTEUR (1,N) ARTICLE
+- CATEGORIE (1,N) ARTICLE
+- ARTICLE (N,N) TAG
+
+## Conclusion
+
+Le MLD complet contient 6 tables :
+- 4 tables principales : VILLE, AUTEUR, CATEGORIE et TAG.
+- 1 table ARTICLE.
+- 1 table de liaison ARTICLE_TAG.
+
+Les relations 1-N sont représentées par des clés étrangères (FK).
+La relation N-N est représentée par une table de liaison avec une clé primaire composée.
