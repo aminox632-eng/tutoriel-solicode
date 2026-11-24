@@ -3,3 +3,4 @@ function afficherbienvenu(){
     console.log("Statut : Utilisateur connecté");
 }
 afficherbienvenu();
+afficherbienvenu();
